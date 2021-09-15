@@ -27,7 +27,7 @@ function garfieldComic(latest = false) {
 
 bot.on("ready", () => console.info("I AM GARF"));
 
-bot.on('message', message => {
+bot.on("message", message => {
 	switch (message.content) {
 		case "garf": message.channel.sendMessage(garfieldComic()[0]);
 		case "last garf": message.channel.sendMessage(garfieldComic(true)[0]);
