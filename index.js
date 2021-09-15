@@ -1,5 +1,5 @@
-import { Client } from "revolt.js";
-let client = new Client();
+let Client = require("revolt.js").Client;
+let bot = new Client();
 let token = "if we got rid of england, would anyone _really_ notice?";
 
 // i wrote this i am fully righteous in my skidding of it fuck you
@@ -25,13 +25,13 @@ function garfieldComic(latest = false) {
 	return [url, date.getUTCFullYear(), pad(date.getUTCMonth() + 1), pad(date.getUTCDate()), total];
 }
 
-client.on("ready", () => console.info("I AM GARF"));
+bot.on("ready", () => console.info("I AM GARF"));
 
-client.on('message', message => {
+bot.on('message', message => {
 	switch (message.content) {
 		case "garf": message.channel.sendMessage(garfieldComic()[0]);
 		case "last garf": message.channel.sendMessage(garfieldComic(true)[0]);
 	}
 });
 
-client.loginBot(token);
+bot.loginBot(token);
