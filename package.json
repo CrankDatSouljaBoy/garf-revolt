@@ -1,0 +1,14 @@
+{
+  "name": "garf",
+  "version": "1.0.0",
+  "description": "the bestest amazingest bot of world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: i am illiterate\" && exit 1"
+  },
+  "keywords": [
+    "garf"
+  ],
+  "author": "joebidenxxx",
+  "license": "MIT"
+}
