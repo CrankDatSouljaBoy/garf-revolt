@@ -28,7 +28,7 @@ function garfieldComic(latest = false) {
 client.on("ready", () => console.info("I AM GARF"));
 
 client.on('message', message => {
-    switch (message.content) {
+	switch (message.content) {
 		case "garf": message.channel.sendMessage(garfieldComic()[0]);
 		case "last garf": message.channel.sendMessage(garfieldComic(true)[0]);
 	}
